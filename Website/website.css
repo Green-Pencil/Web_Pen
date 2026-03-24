@@ -50,8 +50,8 @@ body{
     font-style: normal;
     background-color: rgb(74, 180, 194);
     margin: 0;
-    padding: 1vw;
-    padding-inline: 10vw;
+   /* padding: 1vw;
+    padding-inline: 10vw;*/
 
 }
 
@@ -62,7 +62,7 @@ h2 {
   margin: 0;
   padding-top: 1vw;
   padding-bottom: 1vw;
-  padding-inline: 10vw;
+ /* padding-inline: 10vw;*/
 
 }
 
@@ -71,14 +71,151 @@ p{
   font-style: normal;
   margin: 0;
   font-size: 2vw;
-  padding-top: 8vw;
+ /* padding-top: 8vw;
   padding-bottom: 20vw;
   padding-left: 12vw;
-  padding-right: 24vw;
+  padding-right: 24vw; */
   text-align: right;
 
 }
 
+.title1 {
+  background-color: rgba(74, 180, 194, 0.5);
+    padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+  padding-right: 1.5vw;
+}
+
+.title2 {
+  background-color: rgba(74, 180, 194, 0.5);
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+  padding-left: 1.5vw;
+}
+
+.title3 {
+  background-color: rgba(74, 180, 194, 0.5);
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+  padding-right: 1.5vw;
+}
+
+.title4 {
+  background-color: rgba(74, 180, 194, 0.5);
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+  padding-left: 1.5vw;
+}
+
+/***************************** NR 1 *****************************/
+
+#first.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10.4vw 1fr 10.4vw;
+  margin-bottom: 28vw;
+}
+
+#first img{
+  width: 100%;
+  grid-row: 1/4;
+  grid-column: 1/2;
+}
+
+#first .boxL{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#first .boxR{
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.boxL h1{
+  padding-right: 10vw;
+}
+
+.boxR h1{
+  padding-left: 10vw;
+}
+
+/***************************** NR 2 *****************************/
+
+#second.container{
+  display: grid;
+  grid-template-columns: 1fr 20vw;
+  grid-template-rows: 8vw 80vh;
+}
+
+#second .boxL{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*#second .boxR{
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}*/
+
+#second .mainimgL img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+#second .mainimgL{
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin-right:5vw;
+}
+
+#second .sideimgR img{
+  width: 100%
+}
+
+#second .sideimgR {
+
+   grid-row: 2 / 3;
+   grid-column: 2 / 3;
+}
+
+#second .scroll{
+  height: 80vh;
+  overflow: scroll;
+}
+
+.boxL h2{
+  padding-right: 10vw;
+}
+
+/***************************** NR 3 *****************************/
+
+
+
+
+
+/*-----------section 3 textblock ------------------*/
+.text.left{
+  margin-right: 25vw;
+  text-align: left;
+  padding-top:8vw;
+  padding-left:12vw;
+}
+
+/*
 .boxL {
     position: absolute;
     background-color: rgba(74, 180, 194, 0.5);
@@ -140,15 +277,15 @@ p{
   .title1{
     top: 2%;
     left: 0;
-/*    height: 2px; */
-    /*width: 60%;*/
+    height: 2px; 
+    width: 60%;
 
   }
 
   .title2{
     bottom: 0px;
     right: 0px;
-  /*  width: 60%;*/
+    width: 60%;
     text-align: right;
 
   }
@@ -156,12 +293,13 @@ p{
   .title3{
     top:0px;
     left: 0;
-   /* width: 60%;*/
+    width: 60%;
   }
 
   .title4{
     top:0px;
     right: 0;
-  /*  width: 60%*/
+    width: 60%
   }
+  */
 
