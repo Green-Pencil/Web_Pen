@@ -1,7 +1,9 @@
 
+
 * {
   outline: 1px solid rgba(255, 0, 0, 0.5);
 }
+  
 
 body{
     background-color: white; 
@@ -48,21 +50,23 @@ body{
   h1 {
     font-family: "Inria Sans", system-ui;
     font-style: normal;
+    font-size: 8vw;
     background-color: rgb(74, 180, 194);
     margin: 0;
-   /* padding: 1vw;
-    padding-inline: 10vw;*/
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    padding-left:0.5vw;
+    padding-right:0.5vw;
 
 }
 
 h2 {
   font-family: "Inria Sans", system-ui;
   font-style: normal;
+  font-size: 4.5vw;
   background-color: rgb(74, 180, 194);
   margin: 0;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
- /* padding-inline: 10vw;*/
+  padding: 0.5vw;
 
 }
 
@@ -71,17 +75,13 @@ p{
   font-style: normal;
   margin: 0;
   font-size: 2vw;
- /* padding-top: 8vw;
-  padding-bottom: 20vw;
-  padding-left: 12vw;
-  padding-right: 24vw; */
-  text-align: right;
+
 
 }
 
 .title1 {
   background-color: rgba(74, 180, 194, 0.5);
-    padding-top: 1.5vw;
+  padding-top: 1.5vw;
   padding-bottom: 1.5vw;
   padding-right: 1.5vw;
 }
@@ -96,18 +96,52 @@ p{
 .title3 {
   background-color: rgba(74, 180, 194, 0.5);
   padding-top: 1.5vw;
-  padding-bottom: 1.5vw;
   padding-right: 1.5vw;
+
 }
 
 .title4 {
   background-color: rgba(74, 180, 194, 0.5);
   padding-top: 1.5vw;
-  padding-bottom: 1.5vw;
   padding-left: 1.5vw;
+
 }
 
-/***************************** NR 1 *****************************/
+
+.text.right{
+  margin-right: 25vw;
+  text-align: right;
+  padding-top:8vw;
+  padding-left:12vw;
+  padding-bottom:20vw;
+}
+
+
+.text.left{
+  margin-left: 25vw;
+  text-align: left;
+  padding-top:8vw;
+  padding-right:12vw;
+  padding-bottom:20vw;
+}
+
+
+
+.bottomline {
+  background-color: rgb(74, 180, 194);
+  width: 100%;
+  height: 1.5vw;
+}
+
+.topline {
+  background-color: rgb(74, 180, 194);
+  grid-column: 1/4;
+  grid-row: 2/4;
+  height: 1.5vw;
+  margin-top:-1.5vw;
+}
+
+/***************************** first *****************************/
 
 #first.container{
   display: grid;
@@ -146,7 +180,9 @@ p{
   padding-left: 10vw;
 }
 
-/***************************** NR 2 *****************************/
+
+
+/***************************** second *****************************/
 
 #second.container{
   display: grid;
@@ -161,14 +197,6 @@ p{
   justify-content: flex-start;
   align-items: center;
 }
-
-/*#second .boxR{
-  grid-row: 3/4;
-  grid-column: 1/2;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}*/
 
 #second .mainimgL img{
   width: 100%;
@@ -201,19 +229,234 @@ p{
   padding-right: 10vw;
 }
 
-/***************************** NR 3 *****************************/
+/***************************** third *****************************/
 
-
-
-
-
-/*-----------section 3 textblock ------------------*/
-.text.left{
-  margin-right: 25vw;
-  text-align: left;
-  padding-top:8vw;
-  padding-left:12vw;
+#third.container{
+  display: grid;
+  grid-template-columns: 20vw 1fr;
+  grid-template-rows: 8vw 80vh;
 }
+
+#third .boxR{
+  grid-row: 1/2;
+  grid-column: 3/4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#third .mainimgR img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+#third .mainimgR{
+  grid-row: 2/3;
+  grid-column: 2/4;
+  margin-left:5vw;
+}
+
+#third .sideimgL img{
+  width: 100%
+}
+
+#third .sideimgL {
+
+   grid-row: 2 / 3;
+   grid-column: 1 / 2;
+}
+
+#third .scroll{
+  height: 80vh;
+  overflow: scroll;
+}
+
+.boxR h2{
+  padding-left: 10vw;
+}
+
+
+/***************************** fourth ***************************/
+#fourth.container{
+  display: grid;
+  grid-template-columns: 1fr 20vw;
+  grid-template-rows: 8vw 80vh;
+}
+
+#fourth .boxL{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#fourth .mainimgL img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+#fourth .mainimgL{
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin-right:5vw;
+}
+
+#fourth .sideimgR img{
+  width: 100%
+}
+
+#fourth .sideimgR {
+
+   grid-row: 2 / 3;
+   grid-column: 2 / 3;
+}
+
+#fourth .scroll{
+  height: 80vh;
+  overflow: scroll;
+}
+
+.boxL h2{
+  padding-right: 10vw;
+}
+
+/***************************** fifth *****************************/
+
+#fifth.container{
+  display: grid;
+  grid-template-columns: 20vw 1fr;
+  grid-template-rows: 8vw 80vh;
+}
+
+#fifth .boxR{
+  grid-row: 1/2;
+  grid-column: 3/4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#fifth .mainimgR img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+#fifth .mainimgR{
+  grid-row: 2/3;
+  grid-column: 2/4;
+  margin-left:5vw;
+}
+
+#fifth .sideimgL img{
+  width: 100%
+}
+
+#fifth .sideimgL {
+
+   grid-row: 2 / 3;
+   grid-column: 1 / 2;
+}
+
+#fifth .scroll{
+  height: 80vh;
+  overflow: scroll;
+}
+
+.boxR h2{
+  padding-left: 10vw;
+}
+
+/***************************** sixth *****************************/
+
+#sixth.container{
+  display: grid;
+  grid-template-columns: 1fr 20vw;
+  grid-template-rows: 8vw 80vh;
+}
+
+#sixth .boxL{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#sixth .mainimgL img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+#sixth .mainimgL{
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin-right:5vw;
+}
+
+#sixth .sideimgR img{
+  width: 100%
+}
+
+#sixth .sideimgR {
+
+   grid-row: 2 / 3;
+   grid-column: 2 / 3;
+}
+
+#sixth .scroll{
+  height: 80vh;
+  overflow: scroll;
+}
+
+.boxL h2{
+  padding-right: 10vw;
+}
+
+
+
+
+/***************************** other *****************************/
+
+#footer.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 30vw;
+}
+
+.footerbox1{
+  grid-column: 1/4;
+  background-color: rgba(74, 180, 194, 0.5);
+  height: 100%;
+  padding-top: 1.5vw;
+}
+
+.footerbox2{
+  grid-column: 1/4;
+  background-color: rgb(74, 180, 194);
+  height: 100%;
+}
+
+#footer .text1{
+  grid-column:1/2;
+  padding: 5vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#footer .text2{
+  grid-column:2/3;
+  padding: 5vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 
 /*
 .boxL {
