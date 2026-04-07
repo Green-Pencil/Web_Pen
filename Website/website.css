@@ -1,9 +1,9 @@
 
-
+/*
 * {
   outline: 1px solid rgba(255, 0, 0, 0.5);
 }
-  
+ */ 
 
 body{
     background-color: white; 
@@ -113,7 +113,7 @@ p{
   text-align: right;
   padding-top:8vw;
   padding-left:12vw;
-  padding-bottom:20vw;
+  padding-bottom:30vw;
 }
 
 
@@ -122,7 +122,7 @@ p{
   text-align: left;
   padding-top:8vw;
   padding-right:12vw;
-  padding-bottom:20vw;
+  padding-bottom:30vw;
 }
 
 
@@ -422,41 +422,47 @@ p{
 
 /***************************** other *****************************/
 
-#footer.container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 30vw;
+#footer {
+  height: 20vw;
 }
 
-.footerbox1{
-  grid-column: 1/4;
+.footertop{
   background-color: rgba(74, 180, 194, 0.5);
-  height: 100%;
   padding-top: 1.5vw;
 }
 
-.footerbox2{
+.footermain{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column: 1/4;
   background-color: rgb(74, 180, 194);
   height: 100%;
 }
 
-#footer .text1{
+.footermain .text1{
   grid-column:1/2;
-  padding: 5vw;
+  padding: 2vw;
   display: flex;
-  justify-content: flex-start;
+  text-align: right;
+  justify-content: flex-end;
   align-items: center;
 }
 
-#footer .text2{
+.footermain .text2{
   grid-column:2/3;
+  padding: 2vw;
+  display: flex;
+
+  align-items: center;
+}
+
+.footermain .logo{
+  grid-column: 3/4;
   padding: 5vw;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
 
 /*
 .boxL {
